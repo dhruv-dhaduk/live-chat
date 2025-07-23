@@ -12,7 +12,9 @@ export function Message({ msg }: MessageProps) {
                 msg.isUser ? 'text-green-400 text-right' : 'text-blue-300'
             }`}
         >
-            <span className="font-bold">{msg.sender}: </span>
+            <span className="font-bold">
+                {msg.isUser ? 'You' : msg.sender}:{' '}
+            </span>
             {msg.content}
         </div>
     );

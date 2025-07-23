@@ -1,17 +1,7 @@
 // src/worker.ts
 /// <reference lib="webworker" />
 import { ChatMessage } from './types';
-
-const mockMessages = [
-    'This stream is awesome!',
-    'What game is this?',
-    'LMAO 😂',
-    "Let's goooo!!!",
-    'Did you see that?!',
-    'Hey everyone!',
-    "I'm new here 😄",
-    "Subscribe if you're enjoying!",
-];
+import { mockMessages } from './MockData/messages';
 
 let messageIndex = 0;
 
